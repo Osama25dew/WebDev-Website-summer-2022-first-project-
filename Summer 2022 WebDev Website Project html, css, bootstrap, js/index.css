@@ -1,0 +1,469 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/********************************Header Section***********************************/
+
+
+/*******************************Navigation Bar********************************/
+
+.headerSection {
+    background-image: linear-gradient(to right, rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url("images/headerImage.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+    position: relative;
+}
+
+.centerDiv {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    top: 55%;
+}
+
+.navi {
+    background-color: rgba(0, 168, 255, 0.3);
+    font-weight: bold;
+}
+
+.nav-item a,
+.websiteName a {
+    color: white;
+}
+
+.headerButton a {
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 7px 20px;
+    margin: .3em;
+    color: white;
+    text-decoration: none;
+}
+
+.headerButton a:hover {
+    background-color: white;
+    color: #50d1c0;
+    transition-duration: 1s;
+}
+
+
+/**************************************Tripple Div Card********************************************/
+
+.trippleDivCard {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 9vh 0;
+    opacity: 0;
+    transform: translateY(100px);
+    transition-duration: 2s;
+}
+
+.diviCard {
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.diviCard:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    transition-duration: .6s;
+}
+
+
+/********************************What do We Offer***********************************/
+
+.skills {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition-duration: 2s;
+}
+
+.skillsRight {
+    opacity: 0;
+    transform: translateX(10%);
+    transition-duration: 2s;
+}
+
+.whatDoWeOffer {
+    background-color: #f7f7f9;
+    padding: 50px 0;
+}
+
+.skills h6 {
+    margin-top: .9em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2fccd0;
+}
+
+.progress {
+    height: 1.2em;
+}
+
+.working {
+    background-color: #f7f7f9;
+    padding: .9em;
+}
+
+.working:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+    transition-duration: .6s;
+}
+
+.marginCustom {
+    margin-top: 12vh;
+}
+
+.marginCustomBottom {
+    margin-bottom: 12vh;
+}
+
+
+/***********************project Completed***********************/
+
+.projectCompleted {
+    opacity: 0;
+    transition-duration: 2s;
+    transform: scale(1.1);
+}
+
+
+/***********************our pricing***********************/
+
+.cardBoxOuterLeft {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition-duration: 2s;
+    margin-top: 20px !important;
+}
+
+.cardBoxOuterRight {
+    opacity: 0;
+    transform: translateX(10%);
+    transition-duration: 2s;
+    margin-top: 20px !important;
+}
+
+.cardBoxCenter {
+    opacity: 0;
+    transition-duration: 2s;
+    transform: translateY(-40px);
+}
+
+.PriceInDolor {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.outerPricing {
+    background-image: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .outerPricing {
+        height: fit-content;
+    }
+}
+
+.innerPricing {
+    width: 100%;
+}
+
+.cardBox:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    transition-duration: .6s;
+}
+
+.cardBox:hover .PriceInDolor p span,
+.cardBoxCenter:hover .PriceInDolor p span {
+    color: crimson;
+    font-size: 1.6em;
+}
+
+.cardBox:hover .cardHeading,
+.cardBoxCenter:hover .cardHeading {
+    color: blue;
+}
+
+.cardBox:hover,
+.cardBoxCenter:hover {
+    background-color: #f7f7f9;
+}
+
+.PriceInDolor p span {
+    color: red;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: .5em;
+}
+
+.cardHeading {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.card-footer a {
+    border: 1px solid blueviolet;
+    padding: .2em 1em;
+    border-radius: .9em;
+    text-transform: uppercase;
+}
+
+.card-footer a:hover {
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    background-color: skyblue;
+    transition-duration: 1s;
+}
+
+
+/***********************our happy client***********************/
+
+.ourHappyClientSection {
+    width: 100%;
+    background-color: ed;
+    height: fit-content;
+    padding: 20px 0;
+}
+
+.box {
+    border: 1px solid rgba(0, 0, 0, 0.2em);
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.box:hover {
+    background-color: #16c9f6;
+    transition-duration: .8s;
+}
+
+.box:hover p {
+    color: white;
+    transition-duration: .8s;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -60px;
+}
+
+.carousel-indicators button {
+    background-color: #16c9f6 !important;
+}
+
+.carousel-control-prev-icon:hover {
+    background-color: #16c9f6 !important;
+}
+
+.carousel-control-next-icon:hover {
+    background-color: #16c9f6 !important;
+}
+
+.box a img {
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.box {
+    position: relative;
+    /*agar yaha relative na kiya to jo image k upar inverted commas hein goll circle mai wo sahi se responsive nai hoon ge choti devices mai or is k sath hi slider ki pehli div mai hi khali show ho ga baqi divs mai nai show ho ga*/
+}
+
+.box a::after {
+    content: "\f10d";
+    font-family: fontawesome;
+    border-radius: 50%;
+    background-color: #16c9f6;
+    color: white;
+    padding: .5em;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%;
+    left: 61%;
+}
+
+.box h5 {
+    padding-bottom: 1em;
+}
+
+
+/*************************************************Contact Us**************************************************************/
+
+submitButton {
+    background-color: transparent;
+}
+
+form:hover submitButton {
+    background-color: red;
+}
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 5em 0;
+}
+
+.contactUsInnerDiv {
+    opacity: 0;
+    transform: translateY(100px);
+    transition-duration: 2s;
+}
+
+.contactUs::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+    /*yeh is liye k background jo color hai wo baqi sab input field ko chupa raha tha so thats why yeh kiya*/
+    background: linear-gradient(333.5deg, #16c9f6 55%, #fff 0%);
+}
+
+.formButton button {
+    border: 1px solid transparent;
+    padding: .3em 1em;
+    font-weight: bold;
+    border-radius: .9em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: transparent;
+}
+
+form:hover .formButton button {
+    border: 1px solid transparent;
+    color: #50d1c0;
+    font-weight: bold;
+    background-color: #fff;
+    transition-duration: .5s;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+/*************************************************footer*************************************************************/
+
+.footerRow h4 {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.footerRow a {
+    color: white;
+}
+
+.footerRow a:hover {
+    color: blue;
+    transition-duration: .4s;
+}
+
+.footerRow li {
+    list-style-type: none;
+}
+
+.footer {
+    padding-bottom: 0em !important;
+    margin-bottom: 0px;
+    color: white;
+    background-color: #16c9f6;
+}
+
+.subscribePart input {
+    border-radius: 5em;
+    line-height: 2em;
+}
+
+.subscribePart button {
+    border-radius: 5em;
+    line-height: 2em;
+}
+
+.copyrightDiv {
+    margin-top: 1.5em;
+    padding-bottom: .5em;
+}
+
+
+/*******************************************scroller************************************************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scrollingDiv {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.scrollingDiv i {
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.scrollingDiv i:hover {
+    background-color: #606060;
+}
+
+
+/************************************************media queries**************************************************/
+
+@media (max-width: 992px) {
+    .nav-item {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .cardBoxOuter {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .footerLinks {
+        text-align: center !important;
+    }
+}
+
+
+/***********************************************fade in out etc effect**************************************************/
+
+
+/*is k liye hame us content ki div mai b cher khani karni parti*/
+
+.translateShow {
+    opacity: 1;
+    transform: translate(0px);
+}
